@@ -6,7 +6,7 @@ import { dataContext } from "../Context/UserContext";
 import {food_items} from '../Foods'
 
 function NavBar({  }) {
-  let {input, setInput , setCate} = useContext(dataContext)
+  let {input, setInput , setCate , showCart , setShowCart} = useContext(dataContext)
 
     // 🔥 SEARCH FILTER
 
@@ -37,7 +37,9 @@ function NavBar({  }) {
          </form>
          
          {/* 3rd is Shopping Cart */}
-         <div className="flex justify-center items-center w-[50px] h-[50px] bg-black rounded-full shadow-xl relative">
+         <div className="flex justify-center items-center w-[50px] h-[50px] bg-black rounded-full shadow-xl relative" onClick={()=>{
+          setShowCart(true)
+         }}>
             <span className="absolute top-0 right-2 text-yellow-400 font-bold">0</span>
             <LuShoppingCart className="w-[20px] h-[20px] text-yellow-500"></LuShoppingCart>
          </div>         

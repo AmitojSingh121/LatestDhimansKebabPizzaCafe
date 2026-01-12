@@ -6,9 +6,11 @@ function UserContext({children}) {
     //  UseState 
     let [input , setInput] = useState("")
     // 1st Step is This 
+    let[showCart , setShowCart] = useState(false)
     let data = {
-        input , setInput , cate , setCate
+        input , setInput , cate , setCate , showCart , setShowCart
     }
+
   return (
 
         <div>

@@ -29,7 +29,7 @@ const Categories =[
 
     {
         id:4,
-        name:"Desserts",
+        name:"Saladas",
         image: <LuSalad />
     },
 

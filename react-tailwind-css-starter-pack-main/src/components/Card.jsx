@@ -1,7 +1,7 @@
 import React from 'react'
 import image1 from '../assests/image1.jpg';
 
-function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, Party , Minifood, Mediafood, Maxifood, Partyfood , bebita , ingri , newingri , paopita , bttn , showSizes , buttonn , Showbuttonn}) {
+function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, Party , Minifood, Mediafood, Maxifood, Partyfood , bebita , ingri , newingri , paopita , bttn ,  buttonn , Showbuttonn , showPriceButtons}) {
   return (
     <div className='w-[400px] h-[580px] bg-white p-4 rounded-lg  flex flex-col gap-3'>
         {/* This div for my image */}
@@ -42,7 +42,7 @@ function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, 
 
             <div className='mx-auto text-xl'>{Minifood}</div>
 
-            {!showSizes && (
+            {showPriceButtons && (
                 <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2'>
                        {bttn}
                 </button>
@@ -57,7 +57,7 @@ function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, 
             <p className='text-large font-bold'>{Media}</p>
 
             <div className='mx-auto text-xl'>{Mediafood}</div>
-            {!showSizes && (
+            {showPriceButtons && (
                 <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2'>
                        {bttn}
                 </button>
@@ -71,7 +71,7 @@ function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, 
 
             <div className='mx-auto text-xl'>{Maxifood}</div>
 
-            {!showSizes && (
+            {showPriceButtons&& (
                 <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2'>
                        {bttn}
                 </button>
@@ -85,7 +85,7 @@ function Card({ name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, 
 
             <div className='mx-auto text-xl'>{Partyfood}</div>
 
-            {!showSizes && (
+            {showPriceButtons && (
                 <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2'>
                        {bttn}
                 </button>
