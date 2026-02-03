@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LatestDhimansKebabPizzaCafe/static/css/main.01d81391.css",
+    "main.js": "/LatestDhimansKebabPizzaCafe/static/js/main.aab34ee1.js",
+    "static/media/image1.jpg": "/LatestDhimansKebabPizzaCafe/static/media/image1.cc61fb49a489aae42ee2.jpg",
+    "static/media/image2.webp": "/LatestDhimansKebabPizzaCafe/static/media/image2.8f3778f4885e88c0b15d.webp",
+    "static/media/DhimansLogoimg.webp": "/LatestDhimansKebabPizzaCafe/static/media/DhimansLogoimg.0c3158e9115e19e83eaf.webp",
+    "index.html": "/LatestDhimansKebabPizzaCafe/index.html",
+    "main.01d81391.css.map": "/LatestDhimansKebabPizzaCafe/static/css/main.01d81391.css.map",
+    "main.aab34ee1.js.map": "/LatestDhimansKebabPizzaCafe/static/js/main.aab34ee1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01d81391.css",
+    "static/js/main.aab34ee1.js"
+  ]
+}
