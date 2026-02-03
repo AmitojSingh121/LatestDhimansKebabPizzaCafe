@@ -2,9 +2,17 @@ import React from 'react'
 import image1 from '../assests/image1.jpg';
 import { useDispatch } from 'react-redux';
 import { AddItem } from '../Redux/cartSlice';
+import { toast } from "react-toastify";
 
-function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, Party , Minifood, Mediafood, Maxifood, Partyfood , bebita , ingri , newingri , paopita , bttn ,  buttonn , Showbuttonn , showPriceButtons, id  }) {
+
+function Card({name, image , ingredient , sizes , Prices , Mini, Media, Maxi, Party , Minifood, Mediafood, Maxifood, Partyfood , bebita , ingri , newingri , paopita , bttn ,  buttonn , Showbuttonn , showPriceButtons, id , DonerPrice }) {
+  const hideAddToCart =
+  name === "LAMB SEEKH PIZZA" ||
+  name === " FRANGO SEEKH PIZZA";
+
   let dispatch = useDispatch();
+  const cleanName = name?.trim();
+
 
   return (
     <div className='w-[400px] h-[580px] bg-white p-4 rounded-lg  flex flex-col gap-5'>
@@ -16,7 +24,7 @@ function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, P
         {/* This div for my image name  */}
         <div className='text-2xl font-semibold '>
              {name} 
-            <span>{paopita}</span> 
+            <span>{DonerPrice}</span> 
             {/* {!Showbuttonn && (
                 <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline mx-12'>
                        {buttonn}
@@ -62,11 +70,34 @@ function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, P
         {/* 1st  */}
         <div className='w-full flex justify-between items-center'>
             <p className='text-large font-bold' >{Mini}</p>
+            <div className='mx-auto text-xl'>{}
+              {Minifood !== "Not Available" && (
+    <button 
 
-            <div className='mx-auto text-xl'>{Minifood}</div>
+      onClick={() => {
+        dispatch(
+          AddItem({
+            id: `${id}-mini`,
+            name: `(Mini)`,
+            image: image1,
+            qty: 1,
+          })
+        );
+        toast.success(
+          `${cleanName} Mini – ${Minifood} added 🛒`
+        );
+      }}
+    >
+      {Minifood}
+    </button>
+  )}
+
+    </div>
 
             {showPriceButtons && (
-                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() =>{ console.log("Clicked" ,id , name ) ; dispatch(AddItem({ id: `${id}-mini`,productId:id, name: `${name} Mini`, price:Minifood,  image:image1 , qty:1 }))}}>  {/* Updated: Includes price and size */}
+                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() =>{ console.log("Clicked" ,id , name ) ; dispatch(AddItem({ id: `${id}-mini`,productId:id, name: `${name} Mini`, price:Number(Minifood.replace("€", "")),  image:image1 , qty:1 }))
+                   toast.success(`${name} added to cart 🛒`);
+                }}>  {/* Updated: Includes price and size */}
                        {bttn}
                 </button>
             )}
@@ -77,8 +108,11 @@ function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, P
             <p className='text-large font-bold'>{Media}</p>
 
             <div className='mx-auto text-xl'>{Mediafood}</div>
+
             {showPriceButtons && (
-                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() => dispatch(AddItem({ id:`${id}-media` , name: name + Media, price:Mediafood , image:image1 , qty:1  }))}>  {/* Updated */}
+                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() =>{ console.log("Clicked" ,id , name ) ; dispatch(AddItem({ id:`${id}-media` , name: name + Media, price:Number(Minifood.replace("€", "")), image:image1 , qty:1  }))
+                    toast.success(`${name} added to cart 🛒` );
+               } }>  {/* Updated */}
                        {bttn}
                 </button>
             )}
@@ -91,11 +125,13 @@ function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, P
             <div className='mx-auto text-xl'>{Maxifood}</div>
 
             {showPriceButtons&& (
-                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() => dispatch(AddItem({  id: `${id}-maxi`,          // ✅ FIXED
+                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() =>{ console.log("Clicked" ,id , name ) ; dispatch(AddItem({  id: `${id}-maxi`,          // ✅ FIXED
                   name: `${name} ${Maxi}`,   // ✅ CLEAN NAME
-                    price: Maxifood,   // ✅ NUMBER
+                    price: Number(Mediafood.replace("€", "")),   // ✅ NUMBER
                       image: image1,
-                      qty: 1 }))}>  {/* Updated */}
+                      qty: 1 }))
+                     toast.success(`${name} added to cart 🛒`);
+                      }}>  {/* Updated */}
 
                        {bttn}
                 </button>
@@ -108,31 +144,38 @@ function Card({name, image1 , ingredient , sizes , Prices , Mini, Media, Maxi, P
 
             <div className='mx-auto text-xl'>{Partyfood}</div>
             {showPriceButtons && (
-                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() => dispatch(AddItem({ id:`${id}-party`, name: `${name}${Party}` + Party, price:Partyfood , image:image1 , qty:1}))}> {/* Updated */}
+                <button className='bg-yellow-500 w-8 h-8 rounded-full text-lg font-bold outline px-2' onClick={() => dispatch(AddItem({ id:`${id}-party`, name: `${name}${Party}` + Party, price:Number(Partyfood.replace("€", "").trim()), image:image1 , qty:1}))
+            
+                }> {/* Updated */}
                        {bttn}
                 </button>
             )}
         </div>
 
           {/* ================= KEBAB / DONER (SINGLE PRICE) ================= */}
-      {!showPriceButtons && (
-        <button
-          className="bg-yellow-500 w-full p-3 rounded-lg text-xl font-bold mt-4"
-          onClick={() =>
-            dispatch(
-              AddItem({
-                id: id,
-                name: name,
-                price: Number(Prices),
-                image: image1,
-                qty: 1,
-              })
-            )
-          }
-        >
-          Add to Cart
-        </button>
-      )}
+    {/* ================= KEBAB / DONER (SINGLE PRICE) ================= */}
+{/* ================= KEBAB / DONER (SINGLE PRICE) ================= */}
+{!showPriceButtons &&  !hideAddToCart&& 
+(
+  <button
+    className="bg-yellow-500 w-full p-3 rounded-lg text-xl font-bold mt-4"
+    onClick={() => 
+      { console.log("Clicked" ,id , name ) 
+      dispatch(
+        AddItem({
+          id: id,
+          name: name,
+          price: Number(paopita),
+          image: image,
+          qty: 1,
+        }))
+       toast.success(`${name} added to cart 🛒`);
+
+}}>
+    Add to Cart
+  </button>
+)}
+
     </div>
   )
 }

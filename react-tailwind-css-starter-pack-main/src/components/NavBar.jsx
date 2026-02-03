@@ -39,7 +39,7 @@ function NavBar({  }) {
               <IoSearch className="w-5 h-5 text-yellow-400 "></IoSearch>
               <input type="text" placeholder=" Encontre seu sabor favorito..."
                className="w-full p-2 border
-                border-gray-300 
+                border-gray-300
                outline-none
                text-sm
                md:text-base" 

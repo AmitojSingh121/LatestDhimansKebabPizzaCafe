@@ -32,7 +32,7 @@ import { DecrementQty, IncrementQty, RemoveItem } from '../Redux/cartSlice';
 
         {/* Right Div price and Empty Box */}
          <div className='flex flex-col justify-start items-end gap-6'> 
-            <span className='text-xl text-yellow-400 font-semibold'>{price.toFixed(2)}</span>
+          <span className='text-xl text-yellow-400 font-semibold'>€{price ? Number(price).toFixed(2) : "0.00"}</span>
             <RiDeleteBin6Line className='w-[30px] h-[40px] text-red-400 cursor-pointer' onClick={()=>dispatch(RemoveItem(id))}/>
          </div>
         

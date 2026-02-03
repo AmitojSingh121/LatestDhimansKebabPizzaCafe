@@ -5,7 +5,7 @@ export const food_items = [
     // Pizza Lists 
         
     //1st Pizza 
-    {"id": 1, "food_name": " Pizza Margarita", "food_category": "Pizza", "food_ingredient": "Molho de Tomate, Queijo e Oregao", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm) " , "myMiniFood_price": "€6.20" ,"myMediaFood_price ": "€8.50" , "myMaxiFood_price": "€15.00" , "myPartyFood_price": "€20.00" , "bttn":"+"},
+    {"id": 1, "food_name": " Pizza Margarita", "food_category": "Pizza", "food_ingredient": "Molho de Tomate, Queijo e Oregao", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm) " , "myMiniFood_price": "€6.20" ,"myMediaFood_price ": "€8.50" , "myMaxiFood_price": "€15.00" , "myPartyFood_price": "€20.00" , "btn":"+"},
 
     //2nd Pizza
     {"id": 2, "food_name": "Pizza Fiambre", "food_category": "Pizza" , "food_ingredient": "Queijo ,Molho de Tomate,Oregao e Fiambre", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" ,  "myMiniFood_price": "€6.70" ,"myMediaFood_price ": "€8.90" , "myMaxiFood_price": "€16.40" , "myPartyFood_price": "€24.90", "btn":"+"},
@@ -32,7 +32,7 @@ export const food_items = [
     {"id": 9, "food_name": "Pizza Romana", "food_category": "Pizza", "food_ingredient": "Queijo,Molho de Tomate, Oregao, Fiambre, Courico ,Cogumelos e Ovo", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMiniFood_price": "€7.20" ,"myMediaFood_price ": "€10.90" , "myMaxiFood_price": "€17.90" , "myPartyFood_price": " €28.00" , "btn":"+"},
 
     //   10th Pizza
-    {"id": 10, "food_name": "Pizza Mamamia", "food_category": "Pizza", "food_ingredient": "Queijo, Molho de Tomate, Oregao , Fiambre, Courico, Salsicha e Ovo", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMiniFood_price": "Not Available" ,"myMediaFood_price ": "€11.00" , "myMaxiFood_price": "€17.80" , "myPartyFood_price": "€29.00" , "btn":"+"},
+    {"id": 10, "food_name": "Pizza Mamamia", "food_category": "Pizza", "food_ingredient": "Queijo, Molho de Tomate, Oregao , Fiambre, Courico, Salsicha e Ovo", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices",  "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMediaFood_price ": "€11.00" , "myMaxiFood_price": "€17.80" , "myPartyFood_price": "€29.00" , "btn":"+" },
 
     //11th Pizza
     {"id": 11, "food_name": "Pizza Quatro Estações","food_category": "Pizza", "food_ingredient": "Queijo ,Molho de Tomate, Oregao, Fiambre, Becon, Azeitonas e Cogumelos", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMiniFood_price": "Not Available" ,"myMediaFood_price ": " €11.00" , "myMaxiFood_price": " €18.00" , "myPartyFood_price": "€30.50" , "btn":"+"},
@@ -80,112 +80,116 @@ export const food_items = [
 },
 
 //  Kebab Lists 
-{"id": 25, "food_name": "Doner Kebab / Pao Pita ","food_category": "Kebab", "paopitaprice":" :- €4.50", "food_ingredient": "Combo Pack :- €6.50 " , "food_bebita":"Bebida + Batata frita", 
- "food_ingri":"Pao Pita, Salada mix e Carne. Moliho de Aliho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1,
+{"id": 25, "food_name": "Doner Kebab / Pao Pita ","food_category": "Kebab", "paopitaprice": 4.50, "DonerPrice":":- €4.50","food_ingredient": "Combo Pack :- €6.50 " , "food_bebita":"Bebida + Batata frita", 
+ "food_ingri":"Pao Pita, Salada mix e Carne. Moliho de Aliho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image2,
 },
 
-{"id": 26, "food_name": "Durum Kebab(Tortilla fina)","food_category": "Kebab", "paopitaprice":" :- €5.00",  "food_ingredient": "Combo Pack :- €7.00 " , "food_bebita":"Bebida + Batata frita", 
- "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1 ,"buttonn":"+"
+{"id": 26, "food_name": "Durum Kebab(Tortilla fina)","food_category": "Kebab", "paopitaprice": 5.00,  "DonerPrice":":- €5.00", "food_ingredient": "Combo Pack :- €7.00 " , "food_bebita":"Bebida + Batata frita", 
+ "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1 ,
 
 },
 
-{"id": 27, "food_name": "Pan Kebab","food_category": "Kebab", "paopitaprice":" :- €5.60",  "food_ingredient": "Combo Pack :- €7.40" , "food_bebita":"Bebida + Batata frita", 
+{"id": 27, "food_name": "Pan Kebab","food_category": "Kebab", "paopitaprice": 5.60, "DonerPrice":":- €5.60" ,"food_ingredient": "Combo Pack :- €7.40" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1 , "buttonn":"+"
-
 },
 
-{"id": 28, "food_name": "Doner Box (caixa pequena)","food_category": "Kebab", "paopitaprice":" :- €4.50",  "food_ingredient": "Combo Pack :- €5.60" , "food_bebita":"Bebida", 
+{"id": 28, "food_name": "Doner Box (caixa pequena)","food_category": "Kebab", "paopitaprice": 4.50, "DonerPrice":":- €4.50" ,  "food_ingredient": "Combo Pack :- €5.60" , "food_bebita":"Bebida", 
  "food_ingri":"Carne e Batata Frita. Moliho de Aliho e Ketchup. Caixa peaceno", "food_image": image1 , "buttonn":"+"
 }, 
 
-{"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice":" :- €6.50",  "food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
+{"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice": 6.50, "DonerPrice":":- €6.50" ,"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
 "food_bebita":"Bebida", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
-{"id": 30, "food_name": "Pizza Turca","food_category": "Kebab", "paopitaprice":" :- €6.90",  "food_ingredient": "Combo Pack :- €8.90" , "food_bebita":"Bebida + Batata frita", 
+{"id": 30, "food_name": "Pizza Turca","food_category": "Kebab", "paopitaprice": 6.90, "DonerPrice":":- €6.90" , "food_ingredient": "Combo Pack :- €8.90" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Carne Vaca/Frango. Moliho de Aliho e Ketchup", 
  "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
-{"id": 31, "food_name": "Durum de Frango panado","food_category": "Kebab", "paopitaprice":" :- €5.00",  "food_ingredient": "Combo Pack :- €7.00" , "food_bebita":"Bebida + Batata frita", 
+{"id": 31, "food_name": "Durum de Frango panado","food_category": "Kebab", "paopitaprice":5.00, "DonerPrice":":- €5.00" ,"food_ingredient": "Combo Pack :- €7.00" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Moliho de Aliho e Ketchup.", 
  "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
 // Saladas 
-{"id": 32, "food_name": "SALADA MISTA","food_category": "Saladas", "paopitaprice":":- €4.00",  
+{"id": 32, "food_name": "SALADA MISTA","food_category": "Saladas", "paopitaprice" : 4.00, "DonerPrice":":- €4.00",
     "food_bebita":"(Alface, Tomate, pepino, milho e cebola)", 
  "food_ingri":"Salada mix e Moliho de Aliho e Ketchup.", 
- "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 ,  "buttonn":"+"
+ "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , 
 },
 
-{"id": 33, "food_name": "SALADA CAPRICCIOSA","food_category": "Saladas", "paopitaprice":":- €4.50",  
+{"id": 33, "food_name": "SALADA CAPRICCIOSA","food_category": "Saladas", "paopitaprice": 4.50, "DonerPrice":":- €4.00",
     "food_bebita":"(Alface, Tomate, pepino, queijo e fiambre)",  
-"food_image": image1 ,  "buttonn":"+"
+"food_image": image1 , 
 },
 
-{"id": 34, "food_name": "SALADA ATUM","food_category": "Saladas", "paopitaprice":":- €5.00",  
+{"id": 34, "food_name": "SALADA ATUM","food_category": "Saladas", "paopitaprice":5.00, "DonerPrice":":- €5.00", 
     "food_bebita":"(Alface, Tomate, Pepino, Cebola e Atum)",  
 "food_image": image1 , 
 },
 
-{"id": 35, "food_name": " SALADA CAMARÁO","food_category": "Saladas", "paopitaprice":":- €5.80",  
+{"id": 35, "food_name": " SALADA CAMARÁO","food_category": "Saladas", "paopitaprice":5.80,"DonerPrice":":- €5.80",  
     "food_bebita":"(Alface, Tomate, pepino, milho, ananás, camarão e mozzarella)",  
 "food_image": image1 , 
 },
 
-{"id": 36, "food_name": "SALADA DHIMAN'S","food_category": "Saladas", "paopitaprice":":-  €6.00",  
+{"id": 36, "food_name": "SALADA DHIMAN'S","food_category": "Saladas", "paopitaprice": 6.00 , "DonerPrice":":- €6.00",
     "food_bebita":"(Alface, Tomate, pepino, kabab de frango, milho, a ananás)",  
 "food_image": image1 , 
 },
 
 // Vegetarian
-{"id": 37, "food_name": "Falafel Pao Pita","food_category": "Vegitarian", "paopitaprice":" :-  €4.50", 
+{"id": 37, "food_name": "Falafel Pao Pita","food_category": "Vegitarian", "paopitaprice": 4.50, "DonerPrice":":- €4.50", 
   "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
 "food_ingredient": "Combo Pack :- €6.50" , "food_bebita":"Bebida + Batata frita", 
- "food_image": image1 , "buttonn":"+"
+ "food_image": image1 ,
 },
 
-{"id": 38, "food_name": "Falafel Prato","food_category": "Vegitarian", "paopitaprice":" :- €6.50", 
+{"id": 38, "food_name": "Falafel Prato","food_category": "Vegitarian", "paopitaprice": 6.50, "DonerPrice":":- €6.50", 
   "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
 "food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
  "food_image": image1 , "buttonn":"+"
 },
 
-{"id": 39, "food_name": "Falafel Durum Tortilla","food_category": "Vegitarian", "paopitaprice":" :- €5.00 ", 
+{"id": 39, "food_name": "Falafel Durum Tortilla","food_category": "Vegitarian", "paopitaprice": 5.00 , "DonerPrice":":- €5.00", 
   "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
 "food_ingredient": "Combo Pack :- - €7.00" , "food_bebita":"Bebida", 
  "food_image": image1 , "buttonn":"+"
 },
 // Deserts
 
-{"id": 40, "food_name": "NATA/CHOCOLATE","food_category": "Deserts", "paopitaprice":" :- €2.00", 
- "food_image": image1 , "buttonn":"+"
+{"id": 40, "food_name": "NATA/CHOCOLATE","food_category": "Deserts", "paopitaprice": 2.00, "DonerPrice":":- €2.00",
+ "food_image": image1 
+},
+
+{"id": 41, "food_name": " CREMA PISTACCHIO","food_category": "Deserts", "paopitaprice": 2.00, "DonerPrice":":- €2.00", 
+ "food_image": image1 
 },
 
 
-{"id": 41, "food_name": " CREMA PISTACCHIO","food_category": "Deserts", "paopitaprice":" :- €2.00", 
- "food_image": image1 , "buttonn":"+"
-},
-
-
-{"id": 42, "food_name": " CAFÉ ","food_category": "Deserts", "paopitaprice":" :-€2.00", 
+{"id": 42, "food_name": " CAFÉ ","food_category": "Deserts", "paopitaprice": 2.00 , "DonerPrice":":- €2.00",
  "food_image": image1 , 
- "buttonn":"+"
+ 
 },
 //  Snacks 
-{"id": 43, "food_name": "Nuggets De Frango 6 Und","food_category": "Snacks", "paopitaprice":" :- €4.20", 
+{"id": 43, "food_name": "Nuggets De Frango 6 Und","food_category": "Snacks", "paopitaprice": 4.20 , "DonerPrice":":- €4.20", 
+ "food_image": image1 },
+
+{"id": 44, "food_name": "Chicken Fingers 5pcs","food_category": "Snacks", "paopitaprice": 4.30, "DonerPrice":":- €4.30",
  "food_image": image1 , 
- "buttonn":"+"
 },
 
-{"id": 44, "food_name": "Chicken Fingers 5pcs","food_category": "Snacks", "paopitaprice":" :- €4.30", 
- "food_image": image1 , 
- "buttonn":"+"
-}
+// Pizza Seekh Kebab 
+ {"id": 45, "food_name": "LAMB SEEKH PIZZA", "food_category": "Pizza Seekh Kebab", "food_ingredient": "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Lamb, Pimento Fresco e Cebola Roxa.", "food_image": image1, "food_sizes":"Sizes", 
+    "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "myMiniFood_price": "€9.00" ,"myMediaFood_price ": "€12.50", "btn":"+"
+},
 
-
+{"id": 46, "food_name": " FRANGO SEEKH PIZZA", "food_category": "Pizza Seekh Kebab", "food_ingredient": "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Frango, Pimento Fresco e Cebola Roxa.", "food_image": image1, "food_sizes":"Sizes", 
+  "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "myMiniFood_price": "€9.00" ,"myMediaFood_price ": "€12.50","btn":"+"
+},
 ];
+
+
 
 export default food_items;

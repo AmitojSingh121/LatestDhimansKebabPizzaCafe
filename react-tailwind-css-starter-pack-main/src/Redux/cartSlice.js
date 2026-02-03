@@ -1,7 +1,7 @@
 import { createSlice} from "@reduxjs/toolkit";
 const cartSlice = createSlice({
     //Mosty Function Take  Object When We Create 
-
+    
     name:"cart",
     initialState:[],
     reducers:{
