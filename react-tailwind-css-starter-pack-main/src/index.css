@@ -1,3 +1,52 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg2{
+     background: rgb(14 , 13 , 12);
+}
+
+.bg3{
+    background-image: repeating-linear-gradient(135deg , hsla(146 , 0% , 0% , 0.15)0px , hsla(146 , 0% , 0% , 0.15)0px);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f5f0e8;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Toast dark theme */
+.Toastify__toast { background: #141414 !important; border: 1px solid #2a2a2a !important; color: #f5f0e8 !important; }
+.Toastify__toast--success { border-color: #c9a84c33 !important; }
+.Toastify__progress-bar { background: #c9a84c !important; }
+
+/* Swiper dark theme */
+.swiper-button-next, .swiper-button-prev { color: #c9a84c !important; }
+.swiper-pagination-bullet-active { background: #c9a84c !important; }
+
+/* Date input dark theme */
+input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.7) sepia(1) saturate(2) hue-rotate(5deg); }
+
+/* Select option dark bg */
+option { background-color: #1a1a1a; color: #f5f0e8; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
